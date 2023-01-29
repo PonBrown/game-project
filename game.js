@@ -35,8 +35,8 @@ function game() {
     for (let i = 0; i < 5; i++) {
         const playerSelection = prompt("rock, paper, scissors: ").toLowerCase(); 
         const computerSelection = getComputerChoice();
-        console.log("you choose " + playerSelection);
-        console.log("The computer choose " + computerSelection);
+        console.log("Player: " + playerSelection);
+        console.log("Computer: " + computerSelection);
         console.log(playRound(playerSelection, computerSelection));       
     }
     if (playerScore > computerScore) {
